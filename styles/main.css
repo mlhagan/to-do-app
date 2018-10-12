@@ -1,10 +1,10 @@
 
 h1 {
-  height: 10vh;
+  height: 8vh;
   justify-content: center;
   text-align: left;
   font-size: 40px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 body {
@@ -29,12 +29,12 @@ button:hover {
 
 label {
   text-align: center;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 
 ul {
-  margin: 15px;
-  padding: 0;
+  margin: 30px;
+  padding: 15px;
   color: #8c42f4;
   font-weight: lighter;
 }
