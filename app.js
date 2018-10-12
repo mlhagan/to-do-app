@@ -6,24 +6,28 @@ function onReady(){
 function renderTheUI(){
   const toDoList = document.getElementById('toDoList');
   toDoList.textContent = '';
-  toDos.forEach(function(toDo)){
-    const newLi = document.createElement('li');
+
+  toDos.forEach(function(toDo){
+    const newLI = document.createElement('li');
     const checkbox = document.createElement('input');
     checkbox.type = "checkbox";
 
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = "Delete!";
+
     deleteBtn.addEventListener('click', event => {
       toDos = toDos.filter(function(item){
         return item.id !== toDo.id
     })
+
   renderTheUI();
 });
 
-  newLi.textContent = toDo.title;
-  newLi.appendChild(checkbox);
-  toDoList.appendChild(newLi);
-  newLi.appendChild(deleteBtn);
+  newLI.textContent = toDos.title;
+
+  newLI.appendChild(checkbox);
+  toDoList.appendChild(newLI);
+  newLI.appendChild(deleteBtn);
 })
 }
 
@@ -33,7 +37,7 @@ function createNewToDo(){
   toDos.push({
     title: newToDoText.value,
     complete: false,
-    id: id,
+    id: id
   })
 
   id++;
