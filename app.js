@@ -8,7 +8,7 @@ function renderTheUI(){
   toDoList.textContent = '';
 
   toDos.forEach(function(toDo){
-    const newLI = document.createElement('li');
+    const newLi = document.createElement('li');
     const checkbox = document.createElement('input');
     checkbox.type = "checkbox";
 
@@ -23,11 +23,11 @@ function renderTheUI(){
   renderTheUI();
 });
 
-  newLI.textContent = toDos.title;
+  newLi.textContent = toDos.title;
 
-  newLI.appendChild(checkbox);
-  toDoList.appendChild(newLI);
-  newLI.appendChild(deleteBtn);
+  newLi.appendChild(checkbox);
+  toDoList.appendChild(newLi);
+  newLi.appendChild(deleteBtn);
 })
 }
 
