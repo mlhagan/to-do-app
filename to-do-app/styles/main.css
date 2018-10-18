@@ -1,0 +1,40 @@
+
+h1 {
+  height: 8vh;
+  justify-content: center;
+  text-align: left;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+body {
+  background: #F7F7F7;
+}
+
+input, button {
+  outline: none;
+  font-size: 10px;
+}
+
+button {
+  color: #888;
+  font-size: 12px;
+  width: 100px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #333;
+}
+
+label {
+  text-align: center;
+  margin-left: 25px;
+}
+
+ul {
+  margin: 30px;
+  padding: 15px;
+  color: #8c42f4;
+  font-weight: lighter;
+}
