@@ -3,7 +3,7 @@ function onReady(){
   let id = 0;
   let toDos = [];
   const addToDoForm = document.getElementById('addToDoForm');
-  const new ToDoText = document.getElementById('newToDoText');
+  const newToDoText = document.getElementById('newToDoText');
 
 function createNewToDo() {
   //input task
