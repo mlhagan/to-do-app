@@ -4,7 +4,6 @@ function onReady(){
   let toDos = [];
   const addToDoForm = document.getElementById('addToDoForm');
   const new ToDoText = document.getElementById('newToDoText');
-}
 
 function createNewToDo() {
   //input task
@@ -44,7 +43,7 @@ function renderTheUI() {
       newLi.appendChild(checkbox);
       newLi.appendChild(delBtn);
 
-      delBtn.addEventListener('click', ()=> {
+      delBtn.addEventListener('click', () => {
         toDos = deleteToDo(toDo.id);
         renderTheUI();
       });
@@ -62,7 +61,9 @@ function renderTheUI() {
   });
   //call function
   renderTheUI();
-};
+}
+
+
 //loads function on page load
 window.onload = function() {
   onReady();
